@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header-section{
+    height: 100vh;
+    width: 100vw;
+    background: url('./responsive-img/ffff.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header-wrap{
+    height: 100%;
+    width: 80%;
+    margin: 0 auto;
+}
+.navbar{
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+.menu-items{
+    list-style: none; 
+    opacity: .8;
+    display: flex;
+}
+.menu-items li{
+    margin: 0 10px;
+    font-size: 24px;
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: black;
+    display: block;
+    opacity: .8;
+
+    
+}
+.menu-items li a{
+    color: #ccc;
+    text-decoration: none;
+    font-weight: 500;
+}
+/*
+<div class="header-wrap">
+    <div class="navbar">
+        <div class="navbar-logo-box">
+            <h1 class="navbar-logo">Fadismoqy</h1>
+        </div>
+        <ul class="menu-items">
+            <li><a class="item1" href="#">Home</a></li>
+            <li><a class="item3" href="#">About us</a></li>
+            <li><a class="item2" href="#">Contact</a>
+                <ul class="item2-ul">
+                    <li class="item2-li1 item2-li"><a href="#">Phone</a></li>
+                    <li class="item2-li2 item2-li"><a href="#">Email</a></li>
+                </ul>
+            </li>
+            <li><a class="item4" href="#">Location</a></li>
+        </ul>
+    </div>
+</div>
+*/
+.menu-items li ul li{
+    display: none;
+    transition: all .3s linear;
+    margin: 0;
+}
+.menu-items li:hover ul li{
+    display: block;
+}
+
+.main-header{
+    height: calc(100vh - 70px);
+    background: red
+}
